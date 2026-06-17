@@ -12,6 +12,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="src/styles/style.css">
+
+    <script type="module" defer src="src/script.js"></script>
 </head>
 
 <body>
@@ -48,13 +50,40 @@
                     <use href="src/images/sprite.svg#search"></use>
                 </svg>
             </button>
-            <button aria-label="Hamburger menu">
+            <button class="hamburger-btn" aria-label="Hamburger menu">
                 <svg width="34" height="20">
                     <use href="src/images/sprite.svg#hamburger"></use>
                 </svg>
             </button>
         </div>
     </header>
+    <!-- ====================MODAL WINDOW======================= -->
+    <div class="menu-modal">
+        <div class="menu-modal__content">
+
+            <button class="close-btn" aria-label="Close menu">X</button>
+
+            <ul class="menu-modal__list">
+                <li>
+                    <a href=".">home</a>
+                </li>
+                <li>
+                    <a href=".">about</a>
+                </li>
+                <li>
+                    <a href=".">works</a>
+                </li>
+                <li>
+                    <a href=".">blog</a>
+                </li>
+                <li>
+                    <a href=".">contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- ==================END OF MODAL WINDOW=================== -->
 
     <main>
         <div class="container">

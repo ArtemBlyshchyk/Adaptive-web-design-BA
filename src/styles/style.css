@@ -38,6 +38,7 @@ body {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 section.hero,
@@ -363,6 +364,56 @@ section.info p:first-child {
   color: rgba(0, 0, 0, 1);
   letter-spacing: 10%;
 }
+
+/* ============================MODAL WINDOW===================== */
+.menu-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.menu-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-modal__content {
+  background: white;
+  width: 90%;
+  max-width: 350px;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.menu-modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-modal__list a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* ==========================END OF MODAL WINDOW================== */
 
 /* ===========================TABLET 768px====================== */
 @media screen and (min-width: 768px) {
